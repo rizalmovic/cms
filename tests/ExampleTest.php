@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Rizalmovic\Cms\Tests;
 
 class ExampleTest extends TestCase
 {
