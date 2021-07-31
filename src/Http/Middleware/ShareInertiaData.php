@@ -1,8 +1,9 @@
 <?php
+
 namespace Rizalmovic\Cms\Http\Middleware;
 
-use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 class ShareInertiaData
 {
@@ -16,8 +17,8 @@ class ShareInertiaData
                 'success' => fn () => $request->session()->get('success'),
                 'info' => fn () => $request->session()->get('info'),
                 'warn' => fn () => $request->session()->get('warn'),
-                'error' => fn () => $request->session()->get('error')
-            ]
+                'error' => fn () => $request->session()->get('error'),
+            ],
         ]);
 
         $next($request);

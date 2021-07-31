@@ -37,7 +37,7 @@ class CmsCommand extends Command
             ->run(function ($type, $output) {
                 $this->output->write($output);
             });
-        
+
         $this->installMiddlewareAfter('SubstituteBindings::class', '\App\Http\Middleware\HandleInertiaRequests::class');
     }
 

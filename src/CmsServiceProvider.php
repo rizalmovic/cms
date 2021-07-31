@@ -2,14 +2,13 @@
 
 namespace Rizalmovic\Cms;
 
-use Illuminate\Contracts\Http\Kernel;
-use Inertia\Inertia;
-use Inertia\Console\CreateMiddleware;
 use App\Http\Middleware\HandleInertiaRequests;
+use Illuminate\Contracts\Http\Kernel;
+use Inertia\Console\CreateMiddleware;
+use Rizalmovic\Cms\Commands\CmsCommand;
+use Rizalmovic\Cms\Http\Middleware\ShareInertiaData;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rizalmovic\Cms\Http\Middleware\ShareInertiaData;
-use Rizalmovic\Cms\Commands\CmsCommand;
 
 class CmsServiceProvider extends PackageServiceProvider
 {
